@@ -12,3 +12,4 @@ main = do
   let m = inputToMap contents
   print . length $ concatMap (nub . hike m) (toList $ Data.Map.filter (==0) m)
 
+ 
